@@ -1,17 +1,12 @@
 def my_select(collection)
  # your code here!
  i = 0
-
-  truthy_collection = []
-
+  t_collection = []
   while i < collection.length
-
     if yield(collection[i])
-
-      truthy_collection << collection[i]
-
+      t_collection << collection[i]
     end
     i += 1
   end
-  truthy_collection
+  t_collection
 end
